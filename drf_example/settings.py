@@ -58,6 +58,7 @@ REST_FRAMEWORK = {  #장고 레스트프레임워크 설정
     ],
     'DEFAULT_THROTTLE_RATES': {
         'user': '10/min',
+        'user_view': '3/min',
     },
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',

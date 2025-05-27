@@ -70,7 +70,7 @@ class CommentSerializer(serializers.HyperlinkedModelSerializer):
         view_name='comment-detail'
     )
 
-    class Meata:
+    class Meta:
         model = Comment
-        fields = ['url', 'id', 'post', 'author', 'cotent', 'created_at']
+        fields = ['url', 'id', 'post', 'author', 'content', 'created_at']
         
